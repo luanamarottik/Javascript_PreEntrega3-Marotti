@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Piezas Tejidas en stock y personalizadas. Ponete en contacto con nosotras en esta página">
+	<meta name="keywords" content="MANU, MANUELA, BARRANDEGUY, AGENDA, ROPA, MODA, TENDENCIA, HILOS, TEJIDOS, AGENDA, PERSONALIZADO"
+	<link rel="shortcut icon" href="assets/img/favicon-32x32.png">
+	<title>Agenda</title>
+	<!-- linkear nuestro css -->
+	<link rel="stylesheet" href="../estilo.css">
+</head>
+<body class="body">
+	<!-- fila de logo + menu de navegacion --> 
+	<header class="header">
+		<a title="logoImagen" href="../index.html"><img src="../img/logo.png" alt="logoImagen"></img></a>
+		<nav class="navegacionPrincipal">
+			<ul>
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="mision.html">Misión</a></li>
+				<li><a href="prendas.html">Prendas</a></li>
+				<li><a href="agenda.html">Agenda</a></li>
+				<li><a href="carrito.html">Carrito</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- cierre de fila logo + menu de navegacion -->
+	<!-- fila de información de mi sitio -->
+	<main class="main">
+		<section>
+        	<h2>Agendate!</h2>
+        	<!-- formulario de contacto -->
+			<div class="formularioAgenda">
+			<form action="#" enctype="application/x-www-form-urlencoded" method="GET" >
+            	<!-- Nombre -->
+            	<label for="nombre">Nombre</label></br>
+            	<input class="rellenarFormulario" type="text" name="nombre" id="nombre"></br>
+            	<!-- Email -->
+            	<label for="email">Email</label></br>
+            	<input class="rellenarFormulario" type="email" name="email" id="email"></br>
+            	<!--Teléfono -->
+            	<label for="telefono">Teléfono</label></br>
+            	<input class="rellenarFormulario" type="number" name="telefono" id="telefono"></br>
+            	<!-- Fecha -->
+            	<label for="fecha">Fecha</label><br>
+            	<input class="rellenarFormulario" type="datetime-local" name="fecha" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}" min="2023-01-24T15:00" max="2023-12-31T:21:00"><br>
+            	<!-- Comentarios -->
+            	<label for="comentarios">Comentarios</label><br>
+            	<textarea class="rellenarFormulario" name="comentarios" cols="30" rows="10"></textarea><br>
+            	<!-- Subscripción -->
+				<input type="checkbox">
+            	<label for="promociones">Quiero subscribirme para no perderme de nada!</label><br>
+            	<!-- Enviar o borrar-->
+            	<input class="botones" type="submit" value="Enviar" class="enviar">
+				<input class="botones" type="reset" value="Borrar" class="borrar"><br>
+        	</form>
+			</div>
+    	</section>
+		<section>
+            <h3>Ubicación</h3>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.764896499605!2d-56.061227948780854!3d-34.88724957996671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f87f9685c610b%3A0x484c188be79c1ddf!2sSport%20House!5e0!3m2!1ses-419!2suy!4v1678545080788!5m2!1ses-419!2suy" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+		</section>
+	</main>
+    <!-- fin formulario de contacto -->
+	<!-- inicio de footer --> 
+	<footer class="footer">
+		<img src="../img/logo1.png" alt="logoImagen" class="logoImagen"></img>
+		<section class="infoFooter">
+			<h4>Contacto</h4>
+			<table>
+				<tr>
+					<td><img src="../img/whatsapp.jpeg" alt="icono whatsapp" class="icono"></img></td>
+					<td>(+598) 95 531 467</td>
+				</tr>
+				<tr>
+					<td><img src="../img/mail.jpeg" alt="icono mail" class="icono"></td>
+					<td>manubarrandeguy@gmail.com</td>
+				</tr>
+				<tr>
+					<td><img src="../img/instagram.jpeg" alt="icono instagram" class="icono"></td>
+					<td href="https://www.instagram.com/manu.be_">@manu.be_</td>
+				</tr>
+			</table>
+		</section>
+	</footer>
+    <!-- cierre de footer --> 
+</body>
+</html>

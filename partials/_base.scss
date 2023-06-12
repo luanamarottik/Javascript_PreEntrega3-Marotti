@@ -1,0 +1,37 @@
+/** MIXINS GENÉRICOS **/
+/* ANCHO Y ALTURA */
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+/* DISPLAY FLEX */
+@mixin displayFlex($displayFlex, $flexDirection, $flexWrap) {
+    display: $displayFlex;
+    flex-direction: $flexDirection;
+    flex-wrap: $flexWrap;
+}
+
+/* FUENTE */
+@mixin fuente($fontSize,$fontFamily,$color,$backgroundColor) {
+    font-size: $fontSize;
+    font-family: $fontFamily;
+    color: $color;
+    background-color: $backgroundColor;
+}
+
+/** VARIABLES GENÉRICAS **/
+/* COLORES */
+$colorVerdeClaro:#748e81;
+$colorVerdeIntermedio: #4F7375;
+$colorVerdeOscuro: #274442;
+$colorVerdeBase: #a3bab4; 
+$colorBlanco:#ffffff;
+$colorNegro: #333333;
+$colorBeige: #e9e5e3;
+
+/* FUENTES */
+$fuenteBasica: ("Open Sans", "Roboto Slab", "Lora", sans-serif);
+$fuenteTitulos: (Arial, Helvetica, sans-serif);
+$fuenteOriginal: ('Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif);
+$fuenteSecundaria: ('Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif);

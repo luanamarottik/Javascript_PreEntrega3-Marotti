@@ -1,0 +1,44 @@
+/* CAMBIOS PARA PANTALLA MONITOR */
+@media (min-width: 576px){
+    /* MENU PRINCIPAL */
+    .navegacionPrincipal ul li {
+        display: inline-block;
+    }
+
+    /* FOOTER */
+    .footer {
+        grid-template-columns: 1fr 3fr;
+    } 
+
+    .logoImagen {
+        grid-column:1;
+    }
+
+    .infoFooter {
+        grid-column:2;
+        margin-top: 2%;
+    }
+    
+
+    /*** ESPECIFICOS POR PAGINA ***/
+    /** MISION **/
+    /* SECCIONES */
+    #sobreManuela {
+        flex-wrap: nowrap;
+            p {
+                margin-left: 15px;
+                margin-right: 200px;
+                margin-top: 80px;
+            }
+    }
+    
+    #imgSobreManuela {
+        margin-left: 200px;
+    }
+    
+    /** PRENDAS **/
+    /* MENU SECUNDARIO */
+    .navegacionSecundaria {
+        @include sizes(60%,auto);
+    }
+}

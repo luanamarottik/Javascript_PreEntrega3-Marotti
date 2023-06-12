@@ -1,0 +1,57 @@
+/* TITULOS Y TEXTOS*/ 
+h1 {
+    @include fuente(2.5rem,$fuenteOriginal,$colorVerdeOscuro,none);
+    text-decoration: none;
+    position: relative;
+    text-align:center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+h1:hover {
+    color: $colorBeige;
+    background-color: $colorVerdeBase;
+}
+
+h1:active {
+    text-decoration: underline;
+}
+
+h2 {
+    @include fuente(2rem,$fuenteTitulos,$colorBeige,$colorVerdeOscuro);
+    position: relative;
+    text-align:center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    @include fuente(1.5rem,$fuenteSecundaria,$colorBeige,$colorVerdeIntermedio);
+    text-transform: uppercase;
+    position: relative;
+    text-align:center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+
+h4 {
+    @include fuente(1rem,$fuenteOriginal,$colorNegro,none);
+    position: relative;
+    text-align:left;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+a {
+    @include fuente(auto,$fuenteSecundaria,$colorNegro,none);
+    text-decoration: none;
+    position: relative;
+    text-align:center;
+}
+
+p {
+   display: inline-block;
+   font-family: $fuenteSecundaria;
+   position: relative;
+}

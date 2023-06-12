@@ -1,0 +1,92 @@
+/* GLOBALES */
+.body {
+    @include fuente(16px,$fuenteBasica,$colorNegro,$colorBeige);
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+    box-sizing: border-box;
+}
+
+/* HEADER */
+.header {
+    @include displayFlex(flex,row,wrap);
+    grid-row: 1;
+        img {
+            @include sizes(300px,102px);
+            display: inline;
+            padding-left: 2.5rem;
+        }
+}
+
+/* MENU PRINCIPAL */
+.navegacionPrincipal {
+    @include displayFlex(flex,row,nowrap);
+    align-items: flex-end;
+    margin: 2rem auto;
+    list-style-type: none; 
+    text-align: center;
+        ul li {
+            @include displayFlex(flex,column,wrap);
+            background-color: $colorVerdeClaro;
+            padding-left: 2rem;
+            padding-right: 2rem;
+                a {
+                    display: block;
+                    text-decoration: none;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    color: $colorBlanco;
+                }
+                a:active {
+                    text-decoration: underline; 
+                }
+            }
+        ul li:hover {
+            background-color: $colorVerdeOscuro;
+        }
+        ul li:active {
+            background-color: $colorVerdeOscuro;
+        }
+    }    
+
+/* MAIN */
+.main {
+    grid-row: 2;
+}
+
+/* FOOTER */
+.footer {
+    @include displayFlex(flex,row,wrap);
+    grid-row: 3;
+    background-color: $colorVerdeBase;
+    margin-top: 10%;
+    padding-bottom: 10%;
+        td {
+            text-align: left;
+        }
+} 
+
+.logoImagen {
+  @include sizes(180px,161px);
+  margin-left: 10%;
+  animation-name: aparecer;  
+  animation-duration: 10s; 
+  animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.infoFooter {
+    margin-left: 10%;
+}
+
+.icono {
+    @include sizes(15px,15px);
+    border-radius: 25px;
+}
